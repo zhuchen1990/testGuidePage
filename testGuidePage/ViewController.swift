@@ -7,9 +7,8 @@
 //
 
 import UIKit
-//import AVFoundation
+import AVFoundation
 import AVKit
-import MediaPlayer
 
 let kWidth = UIScreen.mainScreen().bounds.width
 let kHeight = UIScreen.mainScreen().bounds.height
@@ -35,13 +34,13 @@ class ViewController: UIViewController {
         moviePlayController.showsPlaybackControls = false
         player.play()
         
-        
-        //repate play
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.repeatPlay(_:)), name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
         bgAlphaView.frame = moviePlayController.view.frame
         moviePlayController.view.addSubview(bgAlphaView)
         settingScrollView()
         settingTimer()
+        
+        //repate play
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.repeatPlay(_:)), name: AVPlayerItemDidPlayToEndTimeNotification, object: nil)
         
     }
     

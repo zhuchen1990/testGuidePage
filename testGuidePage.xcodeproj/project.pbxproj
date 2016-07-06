@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93DCD34B1D2CA84600A15146 /* GuidePage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93DCD34A1D2CA84600A15146 /* GuidePage.gif */; };
 		93F20F2C1D2B816600050735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F20F2B1D2B816600050735 /* AppDelegate.swift */; };
 		93F20F2E1D2B816600050735 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F20F2D1D2B816600050735 /* ViewController.swift */; };
 		93F20F311D2B816600050735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F20F2F1D2B816600050735 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93DCD34A1D2CA84600A15146 /* GuidePage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GuidePage.gif; sourceTree = "<group>"; };
 		93F20F281D2B816600050735 /* testGuidePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testGuidePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F20F2B1D2B816600050735 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93F20F2D1D2B816600050735 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				93F20F2D1D2B816600050735 /* ViewController.swift */,
 				93F20F5D1D2BB38300050735 /* keep6@2x.png */,
 				93F20F2F1D2B816600050735 /* Main.storyboard */,
+				93DCD34A1D2CA84600A15146 /* GuidePage.gif */,
 				93F20F3D1D2B81CC00050735 /* 1.mp4 */,
 				93F20F321D2B816600050735 /* Assets.xcassets */,
 				93F20F341D2B816600050735 /* LaunchScreen.storyboard */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93DCD34B1D2CA84600A15146 /* GuidePage.gif in Resources */,
 				93F20F3E1D2B876800050735 /* 1.mp4 in Resources */,
 				93F20F5E1D2BB38300050735 /* keep6@2x.png in Resources */,
 				93F20F361D2B816600050735 /* LaunchScreen.storyboard in Resources */,
@@ -294,6 +298,7 @@
 				93F20F3C1D2B816600050735 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
