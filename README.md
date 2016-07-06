@@ -5,7 +5,7 @@
 
 ### 先上效果图
 
-![image](https://github.com/zhuchen1990/testGuidePage/blob/master/GuidePage.gif )
+![image](https://github.com/zhuchen1990/testGuidePage/blob/master/testGuidePage/GuidePage.gif )
 
 
 ### code
