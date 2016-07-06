@@ -1,12 +1,12 @@
 # GuidePage
 
 本来是做个引导图呢，受到keepDemo的启发，发现它们的注册登录页效果感觉挺高大上，也给其他app登录注册提供了一种设计思路，即用视屏作页面背景。	
-代码比较简单，用到的控件也比较少，话不多少，用的swift，直接上代码！
 
 ### 先上效果图
 
 ![image](https://github.com/zhuchen1990/testGuidePage/blob/master/testGuidePage/GuidePage.gif )
 
+代码比较简单，用到的控件也比较少，话不多少，用的swift，直接上代码！
 
 ### code
 ```
@@ -104,5 +104,6 @@ extension ViewController : UIScrollViewDelegate{
     
 }
 ```
+###总结
 代码比较简单，大家应该都能看的懂，由于MPMovieplayerController已经在ios9.0中被废弃了，用来替代的是AVPlayerViewcontroller，至于循环播放，MPMovieplayerController可以setRepeatMode为MPMovieRepeatModeOne，而AVPlayerViewcontroller没有找到这个属性，所以只能通过监听通知来实现了。
 对AVkit框架有兴趣的同学可以查查apple的api，其实功能很强大！
