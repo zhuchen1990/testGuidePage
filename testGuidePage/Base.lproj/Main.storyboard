@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testGuidePage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bgAlphaView" destination="4WU-tQ-kny" id="PNm-4k-pGI"/>
+                        <outlet property="pageControl" destination="YP6-36-QBN" id="e9e-sR-Nm0"/>
+                        <outlet property="scrollView" destination="JHl-4G-AiF" id="ud2-bL-2kV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="4WU-tQ-kny">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" alpha="0.40000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yKa-aZ-CU5">
+                            <rect key="frame" x="208" y="594" width="132" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Login in">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEn-ZM-p4a">
+                            <rect key="frame" x="38" y="594" width="132" height="40"/>
+                            <color key="backgroundColor" red="0.8067599258" green="0.8067599258" blue="0.8067599258" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="3xI-Kd-T5n"/>
+                                <constraint firstAttribute="height" constant="40" id="gNp-vP-Ptl"/>
+                            </constraints>
+                            <state key="normal" title="Sign up">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="3xI-Kd-T5n"/>
+                                </mask>
+                            </variation>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="keep6.png" translatesAutoresizingMaskIntoConstraints="NO" id="7aI-7s-l80">
+                            <rect key="frame" x="81" y="138" width="212" height="125"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="212" id="QdO-gb-F0Y"/>
+                                <constraint firstAttribute="height" constant="125" id="mmR-D6-zFe"/>
+                            </constraints>
+                        </imageView>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHl-4G-AiF">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="586"/>
+                        </scrollView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="YP6-36-QBN">
+                            <rect key="frame" x="160" y="510" width="55" height="37"/>
+                            <color key="currentPageIndicatorTintColor" red="0.70390385285228518" green="0.88126609874259321" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </pageControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="yKa-aZ-CU5" firstAttribute="baseline" secondItem="qEn-ZM-p4a" secondAttribute="firstBaseline" id="3ll-ky-gOP"/>
+                        <constraint firstItem="qEn-ZM-p4a" firstAttribute="width" secondItem="yKa-aZ-CU5" secondAttribute="width" id="Bre-lY-3lW"/>
+                        <constraint firstItem="JHl-4G-AiF" firstAttribute="leading" secondItem="4WU-tQ-kny" secondAttribute="leading" id="EZn-KJ-3KS"/>
+                        <constraint firstItem="JHl-4G-AiF" firstAttribute="top" secondItem="4WU-tQ-kny" secondAttribute="top" id="HFX-VK-pSI"/>
+                        <constraint firstItem="qEn-ZM-p4a" firstAttribute="leading" secondItem="4WU-tQ-kny" secondAttribute="leading" constant="38" id="K3s-Ya-vlo"/>
+                        <constraint firstItem="JHl-4G-AiF" firstAttribute="centerX" secondItem="7aI-7s-l80" secondAttribute="centerX" id="LyX-6O-ZLh"/>
+                        <constraint firstItem="qEn-ZM-p4a" firstAttribute="width" secondItem="4WU-tQ-kny" secondAttribute="width" multiplier="0.3" id="Noh-MG-qGw"/>
+                        <constraint firstItem="qEn-ZM-p4a" firstAttribute="top" secondItem="yKa-aZ-CU5" secondAttribute="top" id="O0h-Vk-RM4"/>
+                        <constraint firstItem="7aI-7s-l80" firstAttribute="centerY" secondItem="4WU-tQ-kny" secondAttribute="centerY" multiplier="0.6" id="Ssg-Cw-AOR"/>
+                        <constraint firstAttribute="bottom" secondItem="qEn-ZM-p4a" secondAttribute="bottom" constant="33" id="Sva-3k-HYd"/>
+                        <constraint firstItem="yKa-aZ-CU5" firstAttribute="leading" secondItem="qEn-ZM-p4a" secondAttribute="trailing" constant="38" id="TaI-h6-KoC"/>
+                        <constraint firstItem="qEn-ZM-p4a" firstAttribute="baseline" secondItem="yKa-aZ-CU5" secondAttribute="firstBaseline" id="Zp8-Qb-CBm"/>
+                        <constraint firstItem="qEn-ZM-p4a" firstAttribute="top" secondItem="JHl-4G-AiF" secondAttribute="bottom" constant="8" symbolic="YES" id="alV-iy-Pd2"/>
+                        <constraint firstAttribute="bottom" secondItem="YP6-36-QBN" secondAttribute="bottom" constant="159" id="hz0-UP-Rn5"/>
+                        <constraint firstAttribute="trailing" secondItem="yKa-aZ-CU5" secondAttribute="trailing" constant="35" id="ljy-b3-1v1"/>
+                        <constraint firstItem="7aI-7s-l80" firstAttribute="centerX" secondItem="4WU-tQ-kny" secondAttribute="centerX" id="spe-RF-QW2"/>
+                        <constraint firstItem="YP6-36-QBN" firstAttribute="centerX" secondItem="7aI-7s-l80" secondAttribute="centerX" id="vDl-FZ-smd"/>
+                        <constraint firstAttribute="bottom" secondItem="YP6-36-QBN" secondAttribute="bottom" constant="120" id="yt2-sF-Y3D"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hz0-UP-Rn5"/>
+                            <exclude reference="Noh-MG-qGw"/>
+                        </mask>
+                    </variation>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-16.5" y="194.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="keep6.png" width="167" height="75"/>
+    </resources>
+</document>
